@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+body {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+h3 {
+  font-size: 1.3rem;
+  color: rgb(139, 139, 255);
+}
+
+.grid-container {
+  display: grid;
+  max-width: 80%;
+  gap: 1.5rem;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "category product"
+    "search ."
+    "database database";
+  margin: 3rem auto;
+}
+
+input,
+select {
+  border-radius: 0.3rem;
+  border: 1px solid rgb(121, 107, 107);
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.9rem 0;
+}
+.botao {
+  border-radius: 0.5rem;
+  border: 0rem;
+  color: white;
+  padding: 0.7rem;
+  width: 8rem;
+  background-color: rgb(31, 31, 136);
+}
+
+.category-container {
+  grid-area: category;
+}
+.category-container > label > h2 {
+  background-color: red;
+}
+.product-container {
+  grid-area: product;
+}
+.search-container i {
+  position: absolute;
+}
+.search-container {
+  grid-area: search;
+  width: 100%;
+}
+
+.table {
+  text-align: center;
+}
+
+.database-container {
+  grid-area: database;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.title {
+  font-size: 1rem;
+  color: rgb(139, 139, 255);
+}
+.subtitle {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+a{
+    padding: 100px;
+}
+#myBtn{
+    width: 100px;
+}
+
+td {
+  font-size: 0.9rem;
+  color: rgb(94, 94, 247);
+  font-weight: 500;
+    border-bottom: 2px solid  !important ;
+    padding: 1rem 0.8rem;
+}
+
+
+.td-btn {
+  padding: 0;
+  width: 9rem;
+}
+th {
+  font-size: 0.9rem;
+  color: rgb(94, 94, 247);
+  font-weight: 700;
+}
+
+hr {
+  max-width: 500rem;
+  margin-top: 1.3rem;
+  background: repeat;
+}
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #eeeeee;
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
